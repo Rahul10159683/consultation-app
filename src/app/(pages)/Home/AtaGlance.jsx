@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Container from "@/app/components/Container";
 import BacktoTop from "@/app/components/BacktoTop";
+import { publicAssetPath } from "@/app/lib/publicAssetPath";
 import { useRouter } from "next/navigation";
 
 const headingLines = ["Take your", "businesses to", "the next", "level..."];
@@ -60,7 +61,7 @@ export default function AtaGlance() {
             >
               <div className="relative h-[500px] w-full">
                 <Image
-                  src="/home_image.png"
+                  src={publicAssetPath("/home_image.png")}
                   alt="Home Image"
                   fill
                   className="object-contain"

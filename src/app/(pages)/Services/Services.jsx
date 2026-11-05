@@ -1,36 +1,37 @@
 "use client";
 import { motion } from "framer-motion";
+import { publicAssetPath } from "@/app/lib/publicAssetPath";
 
 const slides = [
   {
     title: "Management Consulting",
     description:
       "Offering strategic advice and solutions to improve organizational performance, streamline processes, and drive business transformation.",
-    image: "/images/management_consultant.jpg",
+    image: publicAssetPath("/images/management_consultant.jpg"),
   },
   {
     title: "Financial Advisory",
     description:
       "Providing financial analysis, budgeting, forecasting, and risk management to help organizations achieve financial stability and growth.",
-    image: "/images/financial_advisor.jpg",
+    image: publicAssetPath("/images/financial_advisor.jpg"),
   },
   {
     title: "Technology Consulting",
     description:
       "Helping companies leverage cutting-edge technologies, from software solutions to digital transformation strategies.",
-    image: "/images/Technology_Consulting.jpg",
+    image: publicAssetPath("/images/Technology_Consulting.jpg"),
   },
   {
     title: "HR Consulting",
     description:
       "Guiding talent management, employee engagement, and workforce optimization for growth.",
-    image: "/images/Human_resource.jpg",
+    image: publicAssetPath("/images/Human_resource.jpg"),
   },
   {
     title: "Market Research & Strategy",
     description:
       "In-depth market analysis, competitor benchmarking, and planning to keep businesses ahead.",
-    image: "/images/Market.jpeg",
+    image: publicAssetPath("/images/Market.jpeg"),
   },
 ];
 

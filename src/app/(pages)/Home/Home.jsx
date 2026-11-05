@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Container from "@/app/components/Container";
 import BacktoTop from "@/app/components/BacktoTop";
+import { publicAssetPath } from "@/app/lib/publicAssetPath";
 import { useRef } from "react";
 import AtaGlance from "./AtaGlance";
 import Whoweare from "./whoWe";
@@ -82,7 +83,7 @@ export default function Home() {
               >
                 <div className="relative h-[500px] w-full">
                   <Image
-                    src="/home_img.png"
+                    src={publicAssetPath("/home_img.png")}
                     alt="Home Image"
                     fill
                     className="object-contain"

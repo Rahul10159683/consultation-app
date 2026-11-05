@@ -1,11 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { publicAssetPath } from "@/app/lib/publicAssetPath";
 
 const services = [
   {
     title: "IT Strategy & Consulting",
-    image: "/images/It_Str.jpeg",
+    image: publicAssetPath("/images/It_Str.jpeg"),
     points: [
       {
         label: "IT Consulting",
@@ -21,7 +22,7 @@ const services = [
   },
   {
     title: "Technology Infrastructure & Solutions",
-    image: "/images/tgy_infra.png",
+    image: publicAssetPath("/images/tgy_infra.png"),
     points: [
       {
         label: "Cloud Solutions",
@@ -37,7 +38,7 @@ const services = [
   },
   {
     title: "Application Development",
-    image: "/images/app_dev.jpg",
+    image: publicAssetPath("/images/app_dev.jpg"),
     points: [
       {
         label: "Data Analytics",

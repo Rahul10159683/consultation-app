@@ -1,4 +1,5 @@
 "use client";
+import { publicAssetPath } from "@/app/lib/publicAssetPath";
 import { motion } from "framer-motion";
 
 const sections = [
@@ -34,19 +35,19 @@ const sections = [
         </motion.p>
       </>
     ),
-    image: "/images/Aboutus.jpeg",
+    image: publicAssetPath("/images/Aboutus.jpeg"),
   },
   {
     title: "Our Mission",
     description:
       "To be a trusted partner in our client’s journey toward digital excellence by offering strategic, scalable, and sustainable IT solutions that inspire growth and innovation.",
-    image: "/images/our_mission.jpg",
+    image: publicAssetPath("/images/our_mission.jpg"),
   },
   {
     title: "Our Vision",
     description:
       "To redefine how businesses operate in the digital age, making technology an enabler of opportunity, efficiency, and success.",
-    image: "/images/OurVision.png",
+    image: publicAssetPath("/images/OurVision.png"),
   },
 ];
 

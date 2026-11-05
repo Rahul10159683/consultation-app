@@ -1,12 +1,13 @@
 "use client";
 
 import Container from "@/app/components/Container";
+import { publicAssetPath } from "@/app/lib/publicAssetPath";
 
 export default function Whoweare() {
   const services = [
     {
       title: "IT Strategy & Consulting",
-      image: "/placeholder-consulting.png", // Replace with actual image path
+      image: publicAssetPath("/placeholder-consulting.png"), // Replace with actual image path
       points: [
         {
           label: "IT Consulting",
@@ -22,7 +23,7 @@ export default function Whoweare() {
     },
     {
       title: "Technology Infrastructure & Solutions",
-      image: "/placeholder-infrastructure.png",
+      image: publicAssetPath("/placeholder-infrastructure.png"),
       points: [
         {
           label: "Cloud Solutions",
@@ -38,7 +39,7 @@ export default function Whoweare() {
     },
     {
       title: "Application Development",
-      image: "/placeholder-development.png",
+      image: publicAssetPath("/placeholder-development.png"),
       points: [
         {
           label: "Data Analytics",
